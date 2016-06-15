@@ -1,0 +1,9 @@
+pt-BR:
+  activerecord:
+    attributes:
+      hotel:
+        name: Nome
+        email: E-mail
+        address: Endereço
+        phone: Telefone
+        bio: Bio

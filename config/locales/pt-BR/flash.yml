@@ -1,0 +1,9 @@
+pt-BR:
+  flash:
+    hotel:
+      create:
+        notice: 'Hotel cadastrado com sucesso!'
+      update:
+        notice: 'Hotel atualizado com sucesso!'
+      remove:
+        notice: 'Hotel removido com sucesso!'
