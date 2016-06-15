@@ -1,0 +1,45 @@
+<%= form_for @hotel, :html => {:class => "form-horizontal"} do |f| %>
+  <% if @hotel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hotel.errors.count, "error") %> prohibited this hotel from being saved:</h2>
+      <ul>
+      <% @hotel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name, class: 'col-md-3 control-label' %>
+    <div class="col-md-6">
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :email, class: 'col-md-3 control-label' %>
+    <div class="col-md-6">
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :address, class: 'col-md-3 control-label' %>
+    <div class="col-md-6">
+      <%= f.text_field :address, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :phone, class: 'col-md-3 control-label' %>
+    <div class="col-md-6">
+      <%= f.text_field :phone, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :bio, class: 'col-md-3 control-label' %>
+    <div class="col-md-6">
+      <%= f.text_field :bio, class: 'form-control' %>
+    </div>
+  </div>
+  <%= f.submit t('actions.save'), class: 'btn btn-success col-md-3 col-md-offset-3' %>
+  <%= link_to t('actions.back'), hotels_path, class: 'btn btn-default col-md-3' %>
+<% end %>

@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<h1><%= t('title.hotels.index') %></h1>
+<%= link_to t('actions.new'), new_hotel_path, class: 'btn btn-primary' %>
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th><%= t('activerecord.attributes.hotel.name') %></th>
+      <th><%= t('activerecord.attributes.hotel.email') %></th>
+      <th><%= t('activerecord.attributes.hotel.address') %></th>
+      <th><%= t('activerecord.attributes.hotel.phone') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @hotels.each do |hotel| %>
+      <tr>
+        <td><%= hotel.name %></td>
+        <td><%= hotel.email %></td>
+        <td><%= hotel.address %></td>
+        <td><%= hotel.phone %></td>
+        <td><%= link_to t('actions.show'), hotel %></td>
+        <td><%= link_to t('actions.edit'), edit_hotel_path(hotel) %></td>
+        <td><%= link_to t('actions.remove'), hotel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
