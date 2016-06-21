@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong><%= t('activerecord.attributes.room.hotel') %>:</strong>
+  <%= @room.hotel.name %>
+</p>
+<p>
+  <strong><%= t('activerecord.attributes.room.number') %>:</strong>
+  <%= @room.number %>
+</p>
+<p>
+  <strong><%= t('activerecord.attributes.room.floor') %>:</strong>
+  <%= @room.floor %>
+</p>
+<%= link_to t('actions.edit'), edit_room_path(@room) %> |
+<%= link_to t('actions.back'), rooms_path %>

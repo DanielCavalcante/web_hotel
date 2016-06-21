@@ -1,29 +1,23 @@
 <p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('activerecord.attributes.hotel.name') %>:</strong>
   <%= @hotel.name %>
 </p>
-
 <p>
-  <strong>Email:</strong>
+  <strong><%= t('activerecord.attributes.hotel.email') %>:</strong>
   <%= @hotel.email %>
 </p>
-
 <p>
-  <strong>Address:</strong>
+  <strong><%= t('activerecord.attributes.hotel.address') %>:</strong>
   <%= @hotel.address %>
 </p>
-
 <p>
-  <strong>Phone:</strong>
+  <strong><%= t('activerecord.attributes.hotel.phone') %>:</strong>
   <%= @hotel.phone %>
 </p>
-
 <p>
-  <strong>Bio:</strong>
+  <strong><%= t('activerecord.attributes.hotel.bio') %>:</strong>
   <%= @hotel.bio %>
 </p>
-
 <%= link_to t('actions.edit'), edit_hotel_path(@hotel) %> |
 <%= link_to t('actions.back'), hotels_path %>
