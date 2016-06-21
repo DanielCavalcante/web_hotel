@@ -7,3 +7,11 @@ pt-BR:
         notice: 'Hotel atualizado com sucesso!'
       remove:
         notice: 'Hotel removido com sucesso!'
+
+    room:
+      create:
+        notice: 'Quarto cadastrado com sucesso!'
+      update:
+        notice: 'Quarto atualizado com sucesso!'
+      remove:
+        notice: 'Quarto removido com sucesso!'

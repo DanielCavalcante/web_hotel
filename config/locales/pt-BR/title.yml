@@ -1,6 +1,11 @@
 pt-BR:
   title:
-    hotels:
+    hotel:
       index: Hotéis
       new: Novo hotel
       edit: Editar hotel
+
+    room:
+      index: Quartos
+      new: Novo quarto
+      edit: Editar Quarto
